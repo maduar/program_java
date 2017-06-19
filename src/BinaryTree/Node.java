@@ -39,4 +39,14 @@ public class Node {
     }
 
 
+    public Node(char ch, Node rchild, Node lchild) {
+        this.data = ch;
+        this.rchild = rchild;
+        this.lchild = lchild;
+    }
+
+    public String toString() {
+        return "" + getData();
+    }
 }
+
