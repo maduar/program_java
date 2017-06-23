@@ -37,11 +37,11 @@ public class SortCompare {
   }
 
   public static void main(String[] args) {
-    String alg1 = "Shell";
-    String alg2 = "Insertion";
+    String alg1 = "Insertion";
+    String alg2 = "Shell";
 
     int N = 1000;
-    int T = 1000;
+    int T = 100;
 
     double t1 = timeRandomInput(alg1, N, T);
     double t2 = timeRandomInput(alg2, N, T);
