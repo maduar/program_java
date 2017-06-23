@@ -19,6 +19,10 @@ public class SortCompare {
       Selection.sort(a);
     }
 
+    if (alg.equals("Merge")) {
+      Selection.sort(a);
+    }
+
     return timer.elapsedTime();
   }
 
@@ -37,11 +41,11 @@ public class SortCompare {
   }
 
   public static void main(String[] args) {
-    String alg1 = "Insertion";
+    String alg1 = "Merge";
     String alg2 = "Shell";
 
     int N = 1000;
-    int T = 100;
+    int T = 1000;
 
     double t1 = timeRandomInput(alg1, N, T);
     double t2 = timeRandomInput(alg2, N, T);
