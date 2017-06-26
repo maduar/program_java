@@ -10,7 +10,7 @@ import edu.princeton.cs.algs4.StdOut;
 public class MultiWay {
   public static void merge(In[] streams) {
     int N = streams.length;
-    IndexMinPQ<String> pq = new IndexMinPQ<String >(N);
+    MyIndexMinPQ<String> pq = new MyIndexMinPQ<String >(N);
 
     for(int i = 0; i < N; i++) {
       if(!streams[i].isEmpty()) {
